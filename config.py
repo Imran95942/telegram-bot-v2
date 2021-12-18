@@ -24,7 +24,7 @@ bot = telebot.TeleBot(token, threaded=True)
 
 s = requests.session()
 heroku_conn = heroku3.from_key('<token heroku>')
-app = heroku_conn.apps()['repo']
+app = heroku_conn.apps()['https://github.com/Imran95942/telegram-bot-v2']
 version = len(app.releases()) / 100
 
 chat_id = "<id>"
